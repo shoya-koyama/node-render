@@ -1,0 +1,15 @@
+doctype html
+html(lang="jp")
+  head
+    meta(charset="UTF-8")
+    title Questions
+  body
+    h1 Which?
+    form(method="post" action=path)
+      span name: 
+      input(type="text" name="name")
+      input(type="radio" name="favorite" value=firstItem)
+      span #{firstItem} 
+      input(type="radio" name="favorite" value=secondItem)
+      span #{secondItem} 
+      button(type="submit") vote
